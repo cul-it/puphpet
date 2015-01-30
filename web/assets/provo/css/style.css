@@ -1,0 +1,12 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+input {
+  font-family: 'Inconsolata';
+}
+.navbar-brand {
+  font-size: 1.6em;
+}
+h1 {
+  padding-top: .3em;
+}

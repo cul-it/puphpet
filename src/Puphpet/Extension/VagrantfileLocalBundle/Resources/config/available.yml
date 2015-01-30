@@ -15,7 +15,7 @@ available_providers:
         name: virtualbox
         long_name: VirtualBox
         description: >
-            <em>Windows, OSX and Linux</em><br />
+            <em>Windows, OSX and Linux</em>
         default_ip: 192.168.56.101
 
 available_boxes:

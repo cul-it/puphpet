@@ -2,10 +2,9 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <title>PuPHPet - Online GUI configurator for Puppet & Vagrant</title>
+        <title>Provo: VM Provisioner</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Vagrant/Puppet GUI Configuration" />
-        <meta name="author" content="Juan Treminio @ https://jtreminio.com" />
         <meta charset="utf-8" />
 
         {% block stylesheets %}
@@ -30,7 +29,7 @@
     <div id="top" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="{{ path('puphpet.main.homepage') }}" class="navbar-brand">PuPHPet</a>
+                <a href="{{ path('puphpet.main.homepage') }}" class="navbar-brand"><i class="fa fa-cubes"></i> Provo</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,43 +37,13 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
-                <ul class="nav navbar-nav">
-                    <li><a href="http://blog.puphpet.com">Blog</a></li>
-                    <li><a href="{{ path('puphpet.main.about') }}">About</a></li>
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ path('puphpet.main.help') }}">Help!</a></li>
                 </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://kiwiirc.com/client/chat.freenode.net/#puphpet" target="_blank">#puphpet on Freenode</a></li>
-                    <li><a href="https://github.com/puphpet/puphpet/issues" target="_blank">Issues?</a></li>
-                    <li><a href="https://github.com/puphpet/puphpet" target="_blank">Fork Me</a></li>
-                </ul>
-
             </div>
         </div>
     </div>
 {% endblock %}
-
-<div class="jumbotron well-sm" id="slogan">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 hidden-md hidden-lg hidden-print">
-                <h1>PuPHPet</h1>
-                <p>A simple GUI to set up virtual machines for Web development.</p>
-            </div>
-            <div class="col-xs-6 col-md-2"><img src="{{ asset('assets/v4/img/logo.png') }}" id="logo" /></div>
-            <div class="col-md-6 hidden-xs hidden-sm">
-                <h1>PuPHPet</h1>
-                <p>A simple GUI to set up virtual machines for Web development.</p>
-            </div>
-            <div class="col-xs-6 col-md-4">
-                {% if not app.debug %}
-                    {% include 'PuphpetMainBundle:front:carbonAds.html.twig' %}
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</div>
 
 {% block main %}
 {% endblock %}

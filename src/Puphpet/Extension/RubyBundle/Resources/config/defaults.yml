@@ -2,7 +2,9 @@ install: 1
 
 versions:
     -
-        version: ~
-        default: 0
-        bundler: 0
-        gems: []
+        version: 2.1.5
+        default: 1
+        bundler: 1
+        gems:
+            - 'rails'
+

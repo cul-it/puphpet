@@ -1,0 +1,32 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+input,
+code {
+  font-family: 'Inconsolata';
+}
+.navbar-brand {
+  font-size: 1.6em;
+}
+h1 {
+  padding-top: .3em;
+}
+
+/*******************
+BS overrides
+*******************/
+.alert-info {
+  background-color: #9c27b0;
+  border-color: #cba4dd;
+  color: #eee;
+}
+.alert-info hr {
+  border-top-color: #c191d6;
+}
+.alert-info .alert-link {
+  color: #771e86;
+}
+.panel-default .panel-heading {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
